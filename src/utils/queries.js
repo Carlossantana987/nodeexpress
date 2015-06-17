@@ -7,14 +7,6 @@ CREATE TABLE IF NOT EXISTS messages (
   )
   `;
 
-export const createUsersTable = `
-DROP TABLE IF EXISTS users;
-CREATE TABLE IF NOT EXISTS users (
-  id SERIAL PRIMARY KEY,
-  firstName VARCHAR DEFAULT '',
-  lastName VARCHAR DEFAULT NOT NULL
-)
-`
 
 export const insertMessages = `
 INSERT INTO messages(name, message)
@@ -22,11 +14,29 @@ VALUES ('chidimo', 'first message'),
       ('orji', 'second message')
 `;
 
+
+export const dropMessagesTable = 'DROP TABLE messages';
+
+
+// USER table queries
+
+export const createUsersTable = `
+DROP TABLE IF EXISTS users;
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  firstName VARCHAR DEFAULT '',
+  lastName VARCHAR NOT NULL
+  inventory
+)
+`;
+
+
 export const insertUsers = `
 INSERT INTO users(firstName,lastName)
 VALUES('testFirstName','firstName'),
-      ('testLastName','lastName')
-`
+      ('testLastName','lastName'),
+      (['bacon','tomatos'], 'inventory')
+`;
 
-export const dropMessagesTable = 'DROP TABLE messages';
+
 export const dropUsersTable = 'DROP TABLE users';
