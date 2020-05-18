@@ -1,0 +1,6 @@
+node_modules/
+yarn-error.long
+.env
+.nyc_output
+coverage
+build/
