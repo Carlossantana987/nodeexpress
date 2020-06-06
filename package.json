@@ -11,18 +11,5 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  },
-  "description": "",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Carlossantana987/nodeexpress.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Carlossantana987/nodeexpress/issues"
-  },
-  "homepage": "https://github.com/Carlossantana987/nodeexpress#readme"
+  }
 }
