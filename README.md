@@ -1,3 +1,13 @@
+[![Build Status](https://travis-ci.com/Carlossantana987/nodeexpress.svg?branch=master)](https://travis-ci.com/Carlossantana987/nodeexpress)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/1074dac655a558e4ef09/maintainability)](https://codeclimate.com/github/Carlossantana987/nodeexpress/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1074dac655a558e4ef09/test_coverage)](https://codeclimate.com/github/Carlossantana987/nodeexpress/test_coverage)
+
+[![Coverage Status](https://coveralls.io/repos/github/Carlossantana987/nodeexpress/badge.svg?branch=testing-setup)](https://coveralls.io/github/Carlossantana987/nodeexpress?branch=testing-setup)
+
+[![Build status](https://ci.appveyor.com/api/projects/status/d2hxuf7tpjlbjylr?svg=true)](https://ci.appveyor.com/project/Carlossantana987/nodeexpress)
+
 # Express API template
 
 I use "express-generator" to set up the app skeleton.
