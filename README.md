@@ -32,7 +32,12 @@ with babel presets and plugins. This is required for use with nodemon.
 - yarn add nodemon --dev
 (nodemon) is a library that monitors our project source code and automatically restarts our server whenever it observes any changes.
 
-#install elsint and prettier
+# install elsint and prettier
 - yarn add eslint eslint-config-airbnb-base eslint-plugin-import prettier --dev
 
 ESLint helps with enforcing syntax rules while prettier helps for formatting our code properly for readability.
+
+# install dotenv
+- yarn add dotenv
+
+dotenv gives us the ablility to be able to read environment variables into our project and gives us access to the environment variables defined inside
