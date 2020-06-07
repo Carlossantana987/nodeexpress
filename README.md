@@ -41,3 +41,34 @@ ESLint helps with enforcing syntax rules while prettier helps for formatting our
 - yarn add dotenv
 
 dotenv gives us the ablility to be able to read environment variables into our project and gives us access to the environment variables defined inside
+
+# Testing Dependencies
+- yarn add mocha chai nyc sinon-chai supertest coveralls --dev
+
+# Each of these libraries has its own role to play in our tests.
+
+    mocha -	test runner
+    chai -	used to make assertions
+    nyc - collect test coverage report
+    sinon-chai - extends chai’s assertions
+    supertest - used to make HTTP calls to our API endpoints
+    coveralls -	for uploading test coverage to coveralls.io
+
+
+# Testing tools used
+Travis
+Coveralls
+CodeClimate
+AppVeyor
+
+
+
+    [![Build Status](https://travis-ci.com/Carlossantana987/nodeexpress.svg?branch=master)](https://travis-ci.com/Carlossantana987/nodeexpress)
+
+    [![Maintainability](https://api.codeclimate.com/v1/badges/1074dac655a558e4ef09/maintainability)](https://codeclimate.com/github/Carlossantana987/nodeexpress/maintainability)
+
+    [![Test Coverage](https://api.codeclimate.com/v1/badges/1074dac655a558e4ef09/test_coverage)](https://codeclimate.com/github/Carlossantana987/nodeexpress/test_coverage)
+
+    [![Coverage Status](https://coveralls.io/repos/github/Carlossantana987/nodeexpress/badge.svg?branch=testing-setup)](https://coveralls.io/github/Carlossantana987/nodeexpress?branch=testing-setup)
+
+    [![Build status](https://ci.appveyor.com/api/projects/status/d2hxuf7tpjlbjylr?svg=true)](https://ci.appveyor.com/project/Carlossantana987/nodeexpress)
