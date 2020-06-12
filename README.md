@@ -61,3 +61,6 @@ dotenv gives us the ablility to be able to read environment variables into our p
   Coveralls
   CodeClimate
   AppVeyor
+
+# install node-postgres
+- yarn add pg
