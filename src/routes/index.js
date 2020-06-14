@@ -2,7 +2,7 @@ import express from 'express';
 import {
   indexPage, aboutPage, messagesPage, addMessage
 } from '../controllers';
-import { modifyMessage } from '../middleware';
+import { modifyMessage, performAsyncAction } from '../middleware';
 
 const indexRouter = express.Router();
 
@@ -12,7 +12,7 @@ indexRouter.get('/about', aboutPage);
 
 indexRouter.get('/messages', messagesPage);
 
-indexRouter.post('/messages', modifyMessage, addMessage);
+indexRouter.post('/messages', modifyMessage, performAsyncAction, addMessage);
 
 
 export default indexRouter;
