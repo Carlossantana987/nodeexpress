@@ -4,7 +4,7 @@ import {
   aboutPage,
   messagesPage,
   addMessage,
-  userProfiles,
+  users
 } from '../controllers';
 import { modifyMessage, performAsyncAction } from '../middleware';
 
@@ -16,8 +16,8 @@ indexRouter.get('/about', aboutPage);
 
 indexRouter.get('/messages', messagesPage);
 
-indexRouter.get('/users', users);
-
 indexRouter.post('/messages', modifyMessage, performAsyncAction, addMessage);
+
+indexRouter.get('/users', users)
 
 export default indexRouter;
