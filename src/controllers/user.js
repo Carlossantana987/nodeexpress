@@ -11,7 +11,7 @@ export const users = async (req, res) => {
 };
 
 export const addUser = async (req, res) => {
-  const { firstName, lastName } = req.body;
+  const { firstName, lastName, inventory} = req.body;
   const columns = 'firstName, lastName, inventory';
   const values = `'${firstName}', '${lastName}', '${inventory}'`;
 
