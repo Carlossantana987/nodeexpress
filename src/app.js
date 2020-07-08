@@ -3,10 +3,9 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import indexRouter from './routes/index';
 
+let cors = require('cors')
 
-const cors = require('cors')
 const app = express();
-
 app.use(cors())
 
 app.use(logger('dev'));

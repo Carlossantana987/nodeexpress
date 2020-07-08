@@ -25,17 +25,15 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   firstName VARCHAR DEFAULT '',
-  lastName VARCHAR NOT NULL
-  inventory
+  lastName VARCHAR DEFAULT '',
+  inventory VARCHAR NOT NULL
 )
 `;
 
 
 export const insertUsers = `
-INSERT INTO users(firstName,lastName)
-VALUES('testFirstName','firstName'),
-      ('testLastName','lastName'),
-      (['bacon','tomatos'], 'inventory')
+INSERT INTO users(firstName,lastName,inventory)
+VALUES( 'testFirstName','testLastName','Bacon')
 `;
 
 
