@@ -24,6 +24,13 @@ class Model {
       `;
     return this.pool.query(query);
   }
+
+  async deleteUsers(columns,values){
+    const query = `DELETE FROM ${this.table} WHERE id=?`;
+    return this.pool.query(query)
+  }
+
+  
 }
 
 export default Model;

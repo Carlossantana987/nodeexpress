@@ -16,6 +16,7 @@ RETURNING id;
 `;
 
 
+
 export const dropMessagesTable = 'DROP TABLE messages';
 
 
@@ -36,6 +37,7 @@ export const insertUsers = `
 INSERT INTO users(firstName,lastName,inventory)
 VALUES( 'testFirstName','testLastName','Bacon')
 `;
+
 
 
 export const dropUsersTable = 'DROP TABLE users';
