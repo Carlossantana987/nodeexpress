@@ -23,6 +23,9 @@ export const addUser = async (req, res) => {
   }
 };
 
-// export const deleteTask = async (req, res) => {
-//   const { firstName, lastName}
-// }
+export const deleteTask = async (req, res) => {
+
+  try{
+    const data await usersModel.deleteUsers
+  }
+}

@@ -5,7 +5,8 @@ import {
   messagesPage,
   addMessage,
   users,
-  addUser
+  addUser,
+
 } from '../controllers';
 import { modifyMessage, performAsyncAction } from '../middleware';
 
@@ -19,5 +20,7 @@ indexRouter.get('/users', users);
 
 indexRouter.post('/messages', modifyMessage, performAsyncAction, addMessage);
 indexRouter.post('/users', addUser);
+
+indexRouter.delete('/users', deleteUsers)
 
 export default indexRouter;
